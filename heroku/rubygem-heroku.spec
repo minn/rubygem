@@ -1,4 +1,4 @@
-# Generated from heroku-1.14.6.gem by gem2rpm -*- rpm-spec -*-
+# Generated from heroku-1.14.8.gem by gem2rpm -*- rpm-spec -*-
 %global ruby_sitelib %(ruby -rrbconfig -e "puts Config::CONFIG['sitelibdir']")
 %global gemdir %(ruby -rubygems -e 'puts Gem::dir' 2>/dev/null)
 %global gemname heroku
@@ -6,7 +6,7 @@
 
 Summary: Client library and CLI to deploy Rails apps on Heroku
 Name: rubygem-%{gemname}
-Version: 1.14.6
+Version: 1.14.8
 Release: 1%{?dist}
 Group: Development/Languages
 License: GPLv2+ or Ruby
@@ -56,5 +56,5 @@ rm -rf %{buildroot}
 
 
 %changelog
-* Thu Dec 02 2010 <Minnikhanov@gmail.com> - 1.14.6-1
+* Wed Dec 08 2010  <Minnikhanov@gmail.com> - 1.14.8-1
 - Initial package
