@@ -3,3 +3,5 @@ pkg
 rdoc
 .DS_Store
 *.swp
+.gitignore
+
