@@ -1,4 +1,4 @@
-# Generated from heroku-1.14.8.gem by gem2rpm -*- rpm-spec -*-
+# Generated from heroku-1.14.9.gem by gem2rpm -*- rpm-spec -*-
 %global gemdir %(ruby -rubygems -e 'puts Gem::dir' 2>/dev/null)
 %global gemname heroku
 %global geminstdir %{gemdir}/gems/%{gemname}-%{version}
@@ -7,7 +7,7 @@
 
 Summary: Client library and CLI to deploy Rails apps on Heroku
 Name: rubygem-%{gemname}
-Version: 1.14.8
+Version: 1.14.9
 Release: 1%{?dist}
 Group: Development/Languages
 License: MIT
@@ -28,7 +28,6 @@ Provides: rubygem(%{gemname}) = %{version}
 %description
 Client library and command-line tool to manage and deploy Rails apps on
 Heroku.
-
 
 %package doc
 Summary: Documentation for %{name}
@@ -53,6 +52,7 @@ find %{buildroot}%{geminstdir}/bin -type f | xargs chmod a+x
 
 %files
 %defattr(-, root, root, -)
+%dir %{geminstdir}
 %{_bindir}/heroku
 %{geminstdir}/bin
 %{geminstdir}/lib
@@ -67,6 +67,8 @@ find %{buildroot}%{geminstdir}/bin -type f | xargs chmod a+x
 %{geminstdir}/README.md
 
 %changelog
+* Wed Dec 15 2010  <Minnikhanov@gmail.com> - 1.14.9-1
+- Initial package
 * Mon Dec 13 2010  <Minnikhanov@gmail.com> - 1.14.8-1
 - Fix Comment 4 #661436 (Review Request)
 * Wed Dec 08 2010  <Minnikhanov@gmail.com> - 1.14.8-1
