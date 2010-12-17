@@ -67,7 +67,7 @@ find %{buildroot}%{geminstdir}/bin -type f | xargs chmod a+x
 %{geminstdir}/.yardoc
 
 %changelog
-* Thu Dec 17 2010  <Minnikhanov@gmail.com> - 1.14.10-1
+* Thu Dec 17 2010  <Minnikhanov@gmail.com> - 1.14.10-2
 - Fix Comment 13 #661436 (Review Request)
 * Thu Dec 16 2010  <Minnikhanov@gmail.com> - 1.14.10-1
 - Initial package
