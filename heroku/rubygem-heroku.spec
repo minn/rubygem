@@ -56,17 +56,19 @@ find %{buildroot}%{geminstdir}/bin -type f | xargs chmod a+x
 %{_bindir}/heroku
 %{geminstdir}/bin
 %{geminstdir}/lib
-%{geminstdir}/
 %{gemdir}/cache/%{gemname}-%{version}.gem
 %{gemdir}/specifications/%{gemname}-%{version}.gemspec
+%doc %{geminstdir}/README.md
 
 %files doc
 %defattr(-, root, root, -)
 %{gemdir}/doc/%{gemname}-%{version}
 %{geminstdir}/spec
-%{geminstdir}/README.md
+%{geminstdir}/.yardoc
 
 %changelog
+* Thu Dec 17 2010  <Minnikhanov@gmail.com> - 1.14.10-1
+- Fix Comment 13 #661436 (Review Request)
 * Thu Dec 16 2010  <Minnikhanov@gmail.com> - 1.14.10-1
 - Initial package
 * Wed Dec 15 2010  <Minnikhanov@gmail.com> - 1.14.9-1
