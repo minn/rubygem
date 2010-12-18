@@ -8,7 +8,7 @@
 Summary: Client library and CLI to deploy Rails apps on Heroku
 Name: rubygem-%{gemname}
 Version: 1.14.10
-Release: 1%{?dist}
+Release: 2%{?dist}
 Group: Development/Languages
 License: MIT
 URL: http://github.com/heroku/heroku
@@ -67,7 +67,10 @@ find %{buildroot}%{geminstdir}/bin -type f | xargs chmod a+x
 %{geminstdir}/.yardoc
 
 %changelog
-* Thu Dec 17 2010  <Minnikhanov@gmail.com> - 1.14.10-2
+* Thu Dec 18 2010  <Minnikhanov@gmail.com> - 1.14.10-2
+- Fix Comment 18 #661436 (Review Request)
+- Set Release: 2
+* Thu Dec 17 2010  <Minnikhanov@gmail.com> - 1.14.10-1
 - Fix Comment 13 #661436 (Review Request)
 * Thu Dec 16 2010  <Minnikhanov@gmail.com> - 1.14.10-1
 - Initial package
